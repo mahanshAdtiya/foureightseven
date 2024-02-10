@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f6e6d9] text-[#1a1a1a]">
+    <div
+      class="p-4 border-4 border-[#1a1a1a] rounded-md flex-1 flex flex-col justify-between	 items-center md:flex-row"
+    >
+      
+
+    <div class="carousel-container relative w-1/2 h-full overflow-hidden">
+      <div class="carousel-images flex transition-transform duration-500">
+        <img class="carousel-image w-full h-full object-contain" src="https://www.graza.co/cdn/shop/files/graza-pdp-duo-header-3_2x_caa7f912-38b3-4e36-b928-ed6c036abfc7_1440x.jpg?v=1698551972" alt="Image 1">
+        <img class="carousel-image w-full h-full object-contain" src="https://www.graza.co/cdn/shop/products/graza-pdp-sizzle-header-3_2x_98f6ef49-281f-4095-b8bb-3045391401fe_1440x.jpg?v=1698551972" alt="Image 2">
+        <img class="carousel-image w-full h-full object-contain" src="https://www.graza.co/cdn/shop/products/graza-pdp-drizzle-header-3_2x_569477b7-acf0-4950-93a4-c263d6893aa4_1440x.jpg?v=1698551972" alt="Image 3">
+        <img class="carousel-image w-full h-full object-contain" src="https://www.graza.co/cdn/shop/products/graza-pdp-duo-header-2_2x_7673c33b-ecf4-43d9-b053-4261454c4f3c_1440x.jpg?v=1698551972" alt="Image 5">
+        <!-- Add more images as needed -->
+      </div>
+      <div class="carousel-buttons absolute bottom-10 left-10 flex flex-col">
+        <img class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-full cursor-pointer"
+          src="https://www.graza.co/cdn/shop/files/graza-pdp-duo-header-3_2x_caa7f912-38b3-4e36-b928-ed6c036abfc7_1440x.jpg?v=1698551972" alt="Image 1" onclick="showImage(0)"></img>
+        <img class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-full cursor-pointer"
+          src="https://www.graza.co/cdn/shop/products/graza-pdp-sizzle-header-3_2x_98f6ef49-281f-4095-b8bb-3045391401fe_1440x.jpg?v=1698551972" alt="Image 2" onclick="showImage(1)"></img>
+        <img class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-full cursor-pointer"
+          src="https://www.graza.co/cdn/shop/products/graza-pdp-drizzle-header-3_2x_569477b7-acf0-4950-93a4-c263d6893aa4_1440x.jpg?v=1698551972" alt="Image 3" onclick="showImage(2)"></img>
+        <img class="h-10 w-10 bg-gray-200 hover:bg-gray-300 rounded-full cursor-pointer"
+          src="https://www.graza.co/cdn/shop/products/graza-pdp-duo-header-2_2x_7673c33b-ecf4-43d9-b053-4261454c4f3c_1440x.jpg?v=1698551972" alt="Image 4" onclick="showImage(3)"></img>
+
+
+
+        <!-- Add more buttons as needed -->
+      </div>
+    </div>
+    <script>
+      const images = document.querySelectorAll('.carousel-image');
+      const buttons = document.querySelectorAll('.carousel-button');
+  
+      function showImage(index) {
+          images.forEach(image => image.style.transform = `translateX(-${index * 100}%)`);
+      }
+  </script>
+
+      <div class="flex flex-col items-center flex-1 p-4 font-bold">
+        <div class="text-2xl font-bold">
+          “Drizzle” & “Sizzle” 
+        </div>
+        <div class="text-2xl font-bold underline">
+          Extra Virgin Olive Oil
+        </div>
+        <div class="flex items-center mt-4 justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+          </svg>
+          <div>
+            1573 Reviews
+          </div>
+        </div>
+        <div class="bg-[#fff4ec] border-2 border-[#1a1a1a] rounded-md p-4 mt-4 w-full flex flex-col gap-4">
+          <div class="flex text-xs font-bold">
+            Quantity
+          </div>
+          <div class="flex flex-row justify-evenly">
+            <div class="flex flex-col items-center justify-center w-8 bg-[#9eef80] text-black rounded-md cursor-pointer text-sm border-2 border-[#1a1a1a] text-center px-10">
+              1 <br> Set <br> <div class="text-xs">+10%</div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-8 text-black rounded-md cursor-pointer text-sm border-2 border-[#1a1a1a] text-center px-10">
+              2 <br> Sets <br> <div class="text-xs">Free Shipping +14%</div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-8 text-black rounded-md cursor-pointer text-sm border-2 border-[#1a1a1a] text-center px-10">
+              3 <br> Sets <br> <div class="text-xs">Free Shipping +15%</div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-8 text-black rounded-md cursor-pointer text-sm border-2 border-[#1a1a1a] text-center px-10">
+              6 <br> Sets <br> <div class="text-xs">Free Shipping +17%</div>
+            </div>
+          </div>
+          <div class="w-full border-t-2 border-black border-dashed pt-2 flex flex-row items-center gap-2 justify-between">
+            <div class="flex flex-row items-center gap-2 justify-between">
+            <div class="h-4 w-4 border-2 border-[#1a1a1a] rounded-full flex items-center justify-center cursor-pointer ">
+            </div>
+            One time purchase
+          </div>
+            <div class="flex justify-self-end text-xs">
+              $37
+            </div>
+          </div>
+          <div class="w-full border-t-2 border-black border-dashed pt-2 flex flex-row items-center gap-2 justify-between">
+            <div class="flex flex-row items-center gap-2 justify-between">
+              <div class="h-4 w-4 border-2 border-[#1a1a1a] rounded-full flex items-center justify-center cursor-pointer bg-[#9eef80]">
+              </div>
+            Subscribe & Save
+          </div>
+            <div class="flex justify-self-end text-xs">
+              $37
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
